@@ -1,0 +1,16 @@
+module SEDFFHQXL(CK, D, SI, SE, E, Q);
+input CK, D, SI, SE, E;
+output Q;
+wire w1, w2, w3, w4, w5, w6, w7, w8;
+
+AND a1(.A (SI), .B (SE), .Y (w1));
+NOT n1(.A (SE), .Y (w2));
+AND a2(.A (D), .B (E), .Y (w3));
+NOT n3(.A (E), .Y (w4));
+AND a3(.A (w4), .B (Q), .Y (w5));
+OR o2(.A (w3), .B (w5), .Y (w6));
+AND a4(.A (w2), .B (w6), .Y (w7));
+OR o1(.A (w1), .B (w7), .Y (w8));
+DFF d1(.CK (CK), .D (w8), .Q (Q));
+
+endmodule

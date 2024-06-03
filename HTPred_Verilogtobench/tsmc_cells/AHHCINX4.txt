@@ -1,0 +1,12 @@
+module AHHCINX4(A, CIN, S, CO);
+input A, CIN;
+output S, CO;
+wire T1;
+
+NOT n1(.A (CIN), .Y (T1));
+
+XOR x2(.A (A), .B (T1), .Y (S));
+
+AND a1(.A (A), .B (T1), .Y (CO));
+
+endmodule

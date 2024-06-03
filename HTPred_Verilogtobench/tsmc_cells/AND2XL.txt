@@ -1,0 +1,7 @@
+module AND2XL(A, B, Y);
+input A, B;
+output Y;
+
+AND n1(.A (A), .B (B), .Y (Y));
+
+endmodule

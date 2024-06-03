@@ -1,0 +1,22 @@
+module CMPR42X1(A, B, C, D, ICI, S, CO, ICO);
+input A, B, C, D, ICI;
+output S, CO, ICO;
+wire E, IS, F, G, H, I, J, K, L;
+
+XOR x1(.A (A), .B (B), .Y (E));
+XOR x2(.A (E), .B (C), .Y (IS));
+
+XOR x3(.A (IS), .B (D), .Y (F));
+XOR x4(.A (F), .B (ICI), .Y (S));
+
+AND a1(.A (A), .B (B), .Y (G));
+AND a2(.A (A), .B (C), .Y (H));
+AND a3(.A (B), .B (C), .Y (I));
+OR o1(.A (G), .B (H), .C (I), .Y (ICO));
+
+AND a4(.A (IS), .B (D), .Y (J));
+AND a5(.A (IS), .B (ICI), .Y (K));
+AND a6(.A (D), .B (ICI), .Y (L));
+OR o2(.A (J), .B (K), .C (L), .Y (CO));
+
+endmodule

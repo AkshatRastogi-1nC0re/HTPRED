@@ -1,0 +1,9 @@
+module NOR2BX1(AN, B, Y);
+input AN, B;
+output Y;
+wire A;
+
+NOT n1(.A (AN), .Y (A));
+NOR n1(.A (A), .B (B), .Y (Y));
+
+endmodule

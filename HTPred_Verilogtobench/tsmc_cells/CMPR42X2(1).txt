@@ -1,0 +1,9 @@
+module CMPR42X2(A, B, C, D, ICI, S);
+input A, B, C, D, ICI;
+output S;
+
+
+
+
+XOR x(.A (A), .B (B), .C (C), .D (D), .ICI (ICI), .S(S));
+endmodule

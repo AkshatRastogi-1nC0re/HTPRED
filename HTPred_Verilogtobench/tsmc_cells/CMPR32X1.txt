@@ -1,0 +1,11 @@
+module CMPR32X1(A, B, C, S, CO);
+input A, B, C;
+output S, CO;
+wire D, E, F, G;
+XOR x1(.A (A), .B (B), .Y (D));
+XOR x2(.D (D), .C (C), .Y (S));
+AND a1(.A (A), .B (B), .Y (E));
+AND a2(.A (A), .C (C), .Y (F));
+AND a3(.B (B), .C (C), .Y (G));
+OR o(.E (E), .F (F), .G (G), .Y (CO));
+endmodule

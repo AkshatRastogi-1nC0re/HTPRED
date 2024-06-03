@@ -1,0 +1,10 @@
+module AOI33X4(A0, A1, A2, B0, B1, B2, Y);
+input A0, A1, A2, B0, B1, B2;
+output Y;
+wire D, E;
+
+AND a1(.A (A0), .B (A1), .C (A2), .Y (D));
+AND a2(.A (B0), .B (B1), .C (B2), .Y (E));
+NOR a3(.A (D), .B (E), .Y (Y));
+
+endmodule

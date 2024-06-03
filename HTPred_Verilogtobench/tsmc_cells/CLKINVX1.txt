@@ -1,0 +1,7 @@
+module CLKINVX1(A, Y);
+input A;
+output Y;
+
+NOT n1(.A (A), .Y (Y));
+
+endmodule

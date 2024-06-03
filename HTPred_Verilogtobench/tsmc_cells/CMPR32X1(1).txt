@@ -1,0 +1,10 @@
+module CMPR32X1(A, B, C, S);
+input A, B, C;
+output S;
+
+
+
+
+
+XOR x(.A (A), .B (B), .C (C), .S(S));
+endmodule

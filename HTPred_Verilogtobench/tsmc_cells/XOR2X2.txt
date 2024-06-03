@@ -1,0 +1,7 @@
+module XOR2X2(A, B, Y);
+input A, B;
+output Y;
+
+XOR x1(.A (A), .B (B), .Y (Y));
+
+endmodule

@@ -1,0 +1,7 @@
+module AND4XL(A, B, C, D, Y);
+input A, B, C, D;
+output Y;
+
+AND n1(.A (A) , .B (B), .C (C) , .D (D), .Y (Y));
+ 
+endmodule

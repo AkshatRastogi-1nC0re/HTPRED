@@ -1,0 +1,9 @@
+module NAND3BXL(AN, B, C, Y);
+input AN, B, C;
+output Y;
+wire A;
+
+NOT n1(.A (AN), .Y (A));
+NAND n2(.A (A), .B (B), .C (C), .Y (Y));
+
+endmodule

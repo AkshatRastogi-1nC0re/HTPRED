@@ -1,0 +1,13 @@
+module SDFFNSX1(CKN, D, SI, SE, SN, Q, QN);
+input CKN, D, SI, SE, SN;
+output Q, QN;
+wire E, F, G, H;
+
+AND a1(.A (SI), .B (SE), .Y (E));
+NOT n1(.A (SE), .Y (F));
+AND a2(.A (F), .B (D), .Y (G));
+OR o1(.A (E), .B (G), .Y (H));
+DFF d1(.CK (CKN), .D (H), .S (SN), .Q (Q));
+NOT n2(.A (Q), .Y (QN));
+
+endmodule
