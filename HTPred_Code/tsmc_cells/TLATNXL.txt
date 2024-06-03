@@ -1,0 +1,8 @@
+module TLATNXL(D,GN,Q,QN);
+input D,GN;
+output Q,QN;
+wire w1,w2;
+NOT n1(.A(GN), .Y(w1));
+AND a1(.A(w1), .B(D), .Y(Q));
+NOT n2(.A(Q), .Y(QN));
+endmodule

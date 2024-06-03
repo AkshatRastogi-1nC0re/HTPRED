@@ -1,0 +1,11 @@
+module OAI2BB1X4(A0N, A1N, B0, Y);
+input A0N, A1N, B0;
+output Y;
+wire E, F, G;
+
+NOT n1(.A (A0N), .Y (E));
+NOT n2(.A (A1N), .Y (F));
+OR o1(.A (E), .B (F), .Y (G));
+NAND a1(.A (G), .B (B0), .Y (Y));
+
+endmodule

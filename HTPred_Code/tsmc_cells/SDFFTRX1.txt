@@ -1,0 +1,14 @@
+module SDFFTRX1(CK, D, SI, SE, RN, Q, QN);
+input CK, D, SI, SE, RN;
+output Q, QN;
+wire w1, w2, w3, w4, w5;
+
+AND a1(.A (SI), .B (SE), .Y (w1));
+NOT n1(.A (SE), .Y (w2));
+AND a2(.A (D), .B (RN), .Y (w3));
+AND a3(.A (w2), .B (w3), .Y (w4));
+OR o1(.A (w1), .B (w4), .Y (w5));
+DFF d1(.CK (CK), .D (w5), .Q (Q));
+NOT n2(.A (Q), .Y (QN));
+
+endmodule

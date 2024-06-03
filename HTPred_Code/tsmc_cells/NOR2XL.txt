@@ -1,0 +1,7 @@
+module NOR2XL(A, B, Y);
+input A, B;
+output Y;
+
+NOR n1(.A (A), .B (B), .Y (Y));
+
+endmodule

@@ -1,0 +1,29 @@
+module AFCSHCINX4(A, B, CI0N, CI1N, CS, S, CO0, CO1);
+input A, B, CI0N, CI1N, CS;
+output S, CO0, CO1;
+wire T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12;
+
+NOT n1(.A (CI0N), .Y (T1));
+NOT n2(.A (CI1N), .Y (T2));
+NOT n3(.A (CS), .Y (T3));
+
+XOR x1(.A (A), .B (B), .C (T1), .Y (T4));
+XOR x2(.A (A), .B (B), .C (T2), .Y (T5));
+
+AND a1(.A (T3), .B (T4), .Y (T6));
+AND a2(.A (CS), .B (T5), .Y (T7));
+
+OR  o1(.A (T6), .B (T7), .Y (S));
+
+AND a3(.A (A), .B (B), .Y (T8));
+AND a4(.A (A), .B (T1), .Y (T9));
+AND a5(.A (B), .B (T1), .Y (T10));
+
+OR  o2(.A (T8), .B (T9), .C (T10), .Y (CO0));
+
+AND a6(.A (A), .B (T2), .Y (T11));
+AND a7(.A (B), .B (T2), .Y (T12));
+
+OR  o3(.A (T8), .B (T11), .C (T12), .Y (CO1));
+
+endmodule

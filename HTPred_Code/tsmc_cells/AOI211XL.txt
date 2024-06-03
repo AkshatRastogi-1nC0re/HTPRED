@@ -1,0 +1,9 @@
+module AOI211XL(A0, A1, B0, C0, Y);
+input A0, A1, B0, C0;
+output Y;
+wire D;
+
+AND a1(.A (A0), .B (A1), .Y (D));
+NOR a2(.A (D), .B (B0), .C (C0), .Y (Y));
+
+endmodule

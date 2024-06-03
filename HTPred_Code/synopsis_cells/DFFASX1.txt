@@ -1,0 +1,8 @@
+module DFFASX1(CLK, D, SETB, Q, QN);
+input CLK, D, SETB;
+output Q, QN;
+
+DFF d1(.CLK (CLK), .D (D), .SETB (SETB), .Q (Q));
+NOT n1(.A (Q), .Y (QN));
+
+endmodule

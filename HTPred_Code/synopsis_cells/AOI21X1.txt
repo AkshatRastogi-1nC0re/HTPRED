@@ -1,0 +1,7 @@
+module AOI21X1(IN1, IN2, IN3, Q);
+input IN1, IN2, IN3;
+output Q;
+wire w1;
+AND a1(.A(IN1), .B(IN2), .Y(w1));
+NOR o1(.A(w1), .B(IN3), .Y(Q));
+endmodule

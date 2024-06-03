@@ -1,0 +1,6 @@
+module OR4XL(A, B, C, D, Y);
+input A, B, C, D;
+output Y;
+
+NOR o1(.A (A), .B (B), .C (C), .D (D), .Y (Y));
+endmodule

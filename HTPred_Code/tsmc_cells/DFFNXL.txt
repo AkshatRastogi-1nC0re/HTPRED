@@ -1,0 +1,8 @@
+module DFFNXL(CKN, D, Q, QN);
+input CKN, D;
+output Q, QN;
+
+DFF d1(.CK (CKN), .D (D), .Q (Q));
+NOT n2(.A (Q), .Y (QN));
+
+endmodule

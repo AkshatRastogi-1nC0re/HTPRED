@@ -1,0 +1,9 @@
+//Q = ENB' + DFF(D)
+
+module LSDNENX2(ENB, D, Q);
+input ENB, D;
+output Q;
+wire w1;
+NOT n1(.A(ENB), .Y(w1));
+OR o1(.A(w1), .B(D), .Y(Q));
+endmodule

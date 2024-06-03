@@ -1,0 +1,9 @@
+module OAI21X4(A0, A1, B0, Y);
+input A0, A1, B0;
+output Y;
+wire w1;
+
+OR o1(.A (A0), .B (A1), .Y (w1));
+NAND a1(.A (w1), .B (B0), .Y (Y));
+
+endmodule

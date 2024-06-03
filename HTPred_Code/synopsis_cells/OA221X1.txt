@@ -1,0 +1,8 @@
+module OA221X1(IN1, IN2, IN3, IN4, IN5, Q);
+input IN1, IN2, IN3, IN4, IN5;
+output Q;
+wire w1, w2;
+OR o1(.A(IN1), .B(IN2), .Y(w1));
+OR o2(.A(IN3), .B(IN4), .Y(w2));
+AND a1(.A(w1), .B(w2), .C(IN5), .Y(Q));
+endmodule

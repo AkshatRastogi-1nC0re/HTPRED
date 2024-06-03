@@ -1,0 +1,18 @@
+module BENCX1(M0, M1, M2, S, A, X2);
+input M0, M1, M2;
+output S, A, X2;
+wire D, E, F, G, H;
+
+NOT n1(.A (M0), .Y (D));
+NOT n2(.A (M1), .Y (E));
+NOT n3(.A (M2), .Y (F));
+
+OR n4(.A (M0), .B (M1), .Y (G));
+AND n5(.A (F), .B (G), .Y (S));
+
+OR n6(.A (D), .B (E), .Y (H));
+AND n7(.A (M2), .B (H), .Y (A));
+
+XOR n8(.A (M0), .B (M1), .Y (X2));
+
+endmodule

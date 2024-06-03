@@ -1,0 +1,13 @@
+module RSLATX1(R, S, Q, QN);
+input R, S;
+output Q, QN;
+wire w1, w2, w3, w4;
+
+NOT n1(.A (S), .Y (w1));
+NOT n2(.A (R), .Y (w2));
+NAND n3(.A (w1), .B (w4), .Y (w3));
+NAND n4(.A (w2), .B (w3), .Y (w4));
+NOT n5(.A (w3), .Y (QN));
+NOT n6(.A (w4), .Y (Q));
+
+endmodule

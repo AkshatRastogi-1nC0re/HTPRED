@@ -1,0 +1,12 @@
+module DFFNRX2(CKN, D, RN, Q, QN);
+input CKN, D, RN;
+output Q, QN;
+
+ 
+
+DFF d1(.CK (CKN), .D (D), .RN (RN), .Q (Q));
+NOT n2(.A (Q), .Y (QN));
+
+ 
+
+endmodule

@@ -1,0 +1,7 @@
+module IBUFFX16(IN, QN);
+input IN;
+output QN;
+wire w1;
+BUFF b1(.A(IN), .Y(w1));
+NOT n1(.A(w1), .Y(QN));
+endmodule

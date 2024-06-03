@@ -1,0 +1,13 @@
+module SDFFX1(CK, D, SI, SE, Q, QN);
+input CK, D, SI, SE;
+output Q, QN;
+wire E, F, G, H;
+
+AND a1(.A (SI), .B (SE), .Y (E));
+NOT n1(.A (SE), .Y (F));
+AND a2(.A (F), .B (D), .Y (G));
+OR o1(.A (E), .B (G), .Y (H));
+DFF d1(.CK (CK), .D (H), .Q (Q));
+NOT n3(.A (Q), .Y (QN));
+
+endmodule

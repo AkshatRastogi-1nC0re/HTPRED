@@ -1,0 +1,7 @@
+module NOR3XL(A, B, C, Y);
+input A, B, C;
+output Y;
+
+NOR n1(.A (A), .B (B), .C (C), .Y (Y));
+
+endmodule

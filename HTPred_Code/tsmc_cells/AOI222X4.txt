@@ -1,0 +1,11 @@
+module AOI222X4(A0, A1, B0, B1, C0, C1, Y);
+input A0, A1, B0, B1, C0, C1;
+output Y;
+wire D, E, F;
+
+AND a1(.A (A0), .B (A1), .Y (D));
+AND a2(.A (B0), .B (B1), .Y (E));
+AND a3(.A (C0), .B (C1), .Y (F));
+NOR a4(.A (D), .B (E), .C (F), .Y (Y));
+
+endmodule

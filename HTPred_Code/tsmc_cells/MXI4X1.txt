@@ -1,0 +1,15 @@
+module MXI4X1(A, B, C, D, S1, S0, Y);
+input A, B, C, D, S1, S0;
+output Y;
+wire s0n, s1n, T1, T2, T3, T4;
+
+NOT n1(.A (S0), .Y (s0n));
+NOT n2(.A (S1), .Y (s1n));
+
+AND a1(.A (A), .B (s0n), .C (s1n), .Y (T1));
+AND a2(.A (B), .B (S0), .C (s1n), .Y (T2));
+AND a3(.A (C), .B (s0n), .C (S1), .Y (T3));
+AND a4(.A (D), .B (S0), .C (S1), .Y (T4));
+NOR o1(.A (T1), .B (T2), .C (T3), .D (T4), .Y (Y));
+
+endmodule

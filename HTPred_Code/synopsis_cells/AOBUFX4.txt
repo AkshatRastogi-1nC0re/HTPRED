@@ -1,0 +1,5 @@
+module AOBUFX4(IN, Q);
+input IN;
+output Q;
+BUFF b0(.IN(IN), .Q(Q));
+endmodule

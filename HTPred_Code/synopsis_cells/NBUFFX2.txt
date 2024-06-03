@@ -1,0 +1,5 @@
+module NBUFFX2(IN, Q);
+input IN;
+output Q;
+BUFF b1(.A(IN), .Y(Q));
+endmodule

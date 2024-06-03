@@ -1,0 +1,5 @@
+module LSDNX2(D, Q);
+input D;
+output Q;
+DFF d1(.A(D), .Y(Q));
+endmodule
