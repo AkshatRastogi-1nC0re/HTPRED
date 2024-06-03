@@ -1,0 +1,7 @@
+module DFFRHQX1(CK, D, RN, Q);
+input CK, D, RN;
+output Q;
+
+DFF d1(.CK (CK), .D (D), .RN (RN), .Q (Q));
+
+endmodule

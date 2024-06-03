@@ -1,0 +1,11 @@
+module OAI222X1(A0, A1, B0, B1, C0, C1, Y);
+input A0, A1, B0, B1, C0, C1;
+output Y;
+wire w1, w2, w3;
+
+OR o1(.A (A0), .B (A1), .Y (w1));
+OR o2(.A (B0), .B (B1), .Y (w2));
+OR o3(.A (C0), .B (C1), .Y (w3));
+NAND a1(.A (w1), .B (w2), .C (w3), .Y (Y));
+
+endmodule

@@ -1,0 +1,9 @@
+module DLY4X1(A, Y);
+input A;
+output Y;
+wire W1;
+
+BUFF n1(.A (A), .Y (W1));
+BUFF n2(.A (W1), .Y (Y));
+
+endmodule

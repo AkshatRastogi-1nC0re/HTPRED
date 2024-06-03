@@ -1,0 +1,6 @@
+module TLATXL(D,G,Q,QN);
+input D,G;
+output Q,QN;
+AND a1(.A(G), .B(D), .Y(Q));
+NOT n2(.A(Q), .Y(QN));
+endmodule

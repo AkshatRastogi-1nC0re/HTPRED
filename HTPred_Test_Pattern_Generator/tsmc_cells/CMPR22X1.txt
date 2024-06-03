@@ -1,0 +1,8 @@
+module CMPR22X1(A, B, S, CO);
+input A, B;
+output S, CO;
+
+XOR x(.A (A), .B (B), .Y (S));
+AND a(.A (A), .B (B), .Y (CO));
+
+endmodule

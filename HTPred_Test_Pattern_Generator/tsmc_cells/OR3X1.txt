@@ -1,0 +1,7 @@
+module OR3X1(A, B, C, Y);
+input A, B, C;
+output Y;
+
+OR a1(.A (A), .B (B), .C (C), .Y (Y));
+
+endmodule

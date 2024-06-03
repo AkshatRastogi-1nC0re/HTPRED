@@ -1,0 +1,7 @@
+module XNOR2X2(A, B, Y);
+input A, B;
+output Y;
+
+XNOR a5(.A (A), .B (B), .Y (Y));
+
+endmodule

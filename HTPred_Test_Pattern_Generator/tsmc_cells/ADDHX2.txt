@@ -1,0 +1,8 @@
+module ADDHX2(A, B, S, CO);
+input A, B;
+output S, CO;
+
+XOR x1(.A (A), .B (B), .Y (S));
+AND a1(.A (A), .B (B), .Y (CO));
+
+endmodule

@@ -1,0 +1,7 @@
+module AND3X4(IN1, IN2, IN3, Q);
+input IN1, IN2, IN3;
+output Q;
+
+AND n1(.A (IN1) , .B (IN2), .C (IN3) , .Y (Q));
+ 
+endmodule

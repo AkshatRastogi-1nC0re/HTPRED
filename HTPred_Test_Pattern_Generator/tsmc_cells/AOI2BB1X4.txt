@@ -1,0 +1,9 @@
+module AOI2BB1X4(A0N, A1N, B0, Y);
+input A0N, A1N, B0;
+output Y;
+wire E;
+
+NOR a1(.A (A0N), .B (A1N), .Y (E));
+NOR a2(.A (E), .B (B0), .Y (Y));
+
+endmodule

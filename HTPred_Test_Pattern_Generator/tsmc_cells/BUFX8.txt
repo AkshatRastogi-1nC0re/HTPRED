@@ -1,0 +1,7 @@
+module BUFX8(A, Y);
+input A;
+output Y;
+
+BUFF b1(.A (A), .Y (Y));
+
+endmodule

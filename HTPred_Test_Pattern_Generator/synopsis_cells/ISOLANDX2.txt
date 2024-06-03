@@ -1,0 +1,7 @@
+module ISOLANDX2(D, ISO, Q);
+input D, ISO;
+output Q;
+
+AND n1(.A (D), .B (ISO) , .Y (Q));
+
+endmodule

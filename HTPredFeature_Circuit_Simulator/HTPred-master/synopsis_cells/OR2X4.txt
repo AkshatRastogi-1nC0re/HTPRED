@@ -1,0 +1,7 @@
+module OR2X4(IN1, IN2, Q);
+input IN1, IN2;
+output Q;
+
+OR n1(.A (IN1), .B (IN2) , .Y (Q));
+
+endmodule

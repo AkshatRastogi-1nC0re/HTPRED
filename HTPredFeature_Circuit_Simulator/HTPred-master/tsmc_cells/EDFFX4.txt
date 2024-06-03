@@ -1,0 +1,14 @@
+module EDFFX4(CK, D, E, Q, QN);
+input CK, D, E;
+output Q, QN;
+
+wire T1, T2, T3, T4;
+
+AND a1(.A (D), .B (E), .Y (T1));
+NOT a2(.A (E), .Y (T2));
+AND a3(.A (T2), .B (Q), .Y (T3));
+OR a4(.A (T1), .B (T3), .Y (T4));
+DFF a5(.CK (CK), .D (T4), .Y (Q));
+NOT a6(.A (Q), .Y (QN));
+
+endmodule

@@ -1,0 +1,9 @@
+module AOI222X2(IN1, IN2, IN3, IN4, IN5, IN6, Q);
+input IN1, IN2, IN3, IN4, IN5, IN6;
+output Q;
+wire w1, w2, w3;
+AND a1(.A(IN1), .B(IN2), .Y(w1));
+AND a2(.A(IN3), .B(IN4), .Y(w2));
+AND a2(.A(IN5), .B(IN6), .Y(w3));
+NOR o1(.A(w1), .B(w2), .C(w3), .Y(Q));
+endmodule

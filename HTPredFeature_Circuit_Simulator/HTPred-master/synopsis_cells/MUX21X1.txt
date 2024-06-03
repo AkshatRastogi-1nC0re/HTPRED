@@ -1,0 +1,9 @@
+module MUX21X1(IN1, IN2, S, Q);
+input IN1, IN2, S;
+output Q;
+wire sn, w1, w2;
+NOT n1(.A(S), .Y(sn));
+AND a1(.A(sn), .B(IN1), .Y(w1));
+AND a2(.A(S), .B(IN2), .Y(w2));
+OR o1(.A(w1), .B(w2), .Y(Q));
+endmodule

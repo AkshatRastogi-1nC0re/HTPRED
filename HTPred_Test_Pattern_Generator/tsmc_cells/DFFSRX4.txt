@@ -1,0 +1,8 @@
+module DFFSRX4(CK, D, SN, RN, Q, QN);
+input CK, D, SN, RN;
+output Q, QN;
+
+DFF d1(.CK (CK), .D (D), .SN (SN), .RN (RN), .Q (Q));
+NOT n2(.A (Q), .Y (QN));
+
+endmodule

@@ -1,0 +1,15 @@
+module EDFFTRX1(CK, D, E, RN, Q, QN);
+input CK, D, E, RN;
+output Q, QN;
+wire T1, T2, T3, T4, T5, T6;
+
+NOT n1(.A (RN), .Y (T1));
+NOT n2(.A (D), .Y (T2));
+AND a1(.A (T2), .B (E), .Y (T3));
+NOT n3(.A (E), .Y (T4));
+AND a2(.A (T4), .B (Q), .Y (T5));
+NOR no(.A (T1), .B (T3), .C (T5), .Y (T6));
+DFF d(.CK (CK), .D (T6), .Q (Q));
+NOT n4(.A (Q), .Y (QN));
+
+endmodule

@@ -1,0 +1,12 @@
+module ADDFXL(A, B, CI, S, CO);
+input A, B, CI;
+output S, CO;
+wire w1, w2, w3;
+
+XOR x1(.A (A), .B (B), .CI (CI), .Y (S));
+XOR x2(.A (A), .B (B), .Y (w1));
+AND a1(.A (w1), .B (CI), .Y (w2));
+AND a2(.A (A), .B (B), .Y (w3));
+OR a3(.A (w2), .B (w3), .Y (CO));
+
+endmodule

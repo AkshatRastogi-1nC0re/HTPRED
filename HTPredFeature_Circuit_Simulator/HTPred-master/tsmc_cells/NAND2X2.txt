@@ -1,0 +1,7 @@
+module NAND2X2(A, B, Y);
+input A, B;
+output Y;
+
+NAND n1(.A (A), .B (B), .Y (Y));
+
+endmodule

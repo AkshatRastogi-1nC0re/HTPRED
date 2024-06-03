@@ -1,0 +1,17 @@
+//Q = S1' S0' IN1 + S1' S0 IN2 + S1 S0' IN3 + S1 S0 IN4;
+
+module MUX41X2(IN1, IN2, IN3, IN4, S0, S1, Q);
+input IN1, IN2, IN3, IN4, S0, S1;
+output Q;
+wire s0n, s1n, w1, w2, w3, w4;
+
+NOT n1(.A(S0), .Y(s0n));
+NOT n2(.A(S1), .Y(s1n));
+AND a1(.A(s0n), .B(s1n), .C(IN1), .Y(w1));
+AND a2(.A(S0), .B(s1n), .C(IN2), .Y(w2));
+AND a3(.A(S1), .B(s0n), .C(IN3), .Y(w3));
+AND a4(.A(S1), .B(S0), .C(IN4), .Y(w4));
+
+OR o1(.A(w1), .B(w2), .C(w3), .D(w4), .Y(Q));
+
+endmodule

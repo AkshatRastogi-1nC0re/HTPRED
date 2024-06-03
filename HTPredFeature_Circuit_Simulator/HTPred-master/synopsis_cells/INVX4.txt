@@ -1,0 +1,7 @@
+module INVX4(IN, QN);
+input IN;
+output QN;
+
+NOT n1(.A (IN), .Y (QN));
+
+endmodule

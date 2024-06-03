@@ -1,0 +1,1619 @@
+Features to be extracted from Circuit:
+
+1. No. of primary input gates
+2. No. of primary output gates
+3. No. of wires
+4. No. of non-primary input gates
+5. No. of non-primary output gates
+6. No. of 1 input gates
+7. No. of 2 input gates
+8. No. of 3 or more input gates
+9. sum CC0
+10. sum CC1
+11. sum CO
+12. No. of AND
+13. No. of OR
+14. No of NOT
+15. No of NAND
+16. No of NOR
+17. No of DFF
+18. No. of XOR
+19. NO. OF XNOR
+20. Sum P0
+21. Sum P1
+22. P0 >= 0.9
+23. P0 >= 0.8
+24. P0 >= 0.7
+25. P0 >= 0.6
+26. p0 >= 0.5
+27. p0 >= 0.4
+28. p0 >= 0.3
+29. p0 >= 0.2
+30. p0 >= 0.1
+31. P1 >= 0.9
+32. P1 >= 0.8
+33. P1 >= 0.7
+34. P1 >= 0.6
+35. p1 >= 0.5
+36. p1 >= 0.4
+37. p1 >= 0.3
+38. p1 >= 0.2
+39. p1 >= 0.1
+40. cc0 <= 10
+41. cc0 <= 9
+42. cc0 <= 8
+43. cc0 <= 7
+44. cc0 <= 6
+45. cc0 <= 5
+46. cc0 <= 4
+47. cc0 <= 3
+48. cc0 <= 2
+49. cc0 <= 1
+50. cc0 > 10
+51. cc1 <= 10
+52. cc1 <= 9
+53. cc1 <= 8
+54. cc1 <= 7
+55. cc1 <= 6
+56. cc1 <= 5
+57. cc1 <= 4
+58. cc1 <= 3
+59. cc1 <= 2
+60. cc1 <= 1
+61. cc1 > 10
+62. SUM P0 * SUM C0
+63. SUM P1 * SUM C1
+64. Average P0
+65. Average P1
+66. Average CC0
+67. Average CC1
+68. MEDIAN HIGH P0
+69. MEDIAN HIGH P1
+70. MEDIAN HIGH CC0
+71. MEDIAN HIGH CC1
+72. MEDIAN LOW P0
+73. MEDIAN LOW P1
+74. MEDIAN LOW CC0
+75. MEDIAN LOW CC1
+76. NORMALISED P0
+77. NORMALISED P1
+78. NORMALISED CC0
+79. NORMALISED CC1
+80. STANDARD DEVIATION P0
+81. STANDARD DEVIATION P1
+82. STANDARD DEVIATION CC0
+83. STANDARD DEVIATION CC1
+84. HARMONIC MEAN P0
+85. HARMONIC MEAN P1
+86. HARMONIC MEAN CC0
+87. HARMONIC MEAN CC1
+88. POPULATION STANDARD DEVIATION P0
+89. POPULATION STANDARD DEVIATION P1
+90. POPULATION STANDARD DEVIATION CC0
+91. POPULATION STANDARD DEVIATION CC1
+92. POPULATION VARIANCE P0
+93. POPULATION VARIANCE P1
+94. POPULATION VARIANCE CC0
+95. POPULATION VARIANCE CC1
+96. ratio SUM(P0/P1)
+97. ratio SUM(cc0/cc1)
+98. GEOMETRIC MEAN P0
+99. GEOMETRIC MEAN P1
+100. GEOMETRIC MEAN CC0
+101. GEOMETRIC MEAN CC1
+102. ratio SUM(P0)/SUM(P1)
+103. ratio SUM(CC0)/SUM(CC1)
+104. SUM CC1*SUM CC0
+105. SUM CC1*SUM CO
+106. SUM CC1*SUM P0
+107. SUM CC0*SUM CO
+108. SUM CC0*SUM P1
+109. SUM CO*SUM P0
+110. SUM CO*SUM P1
+111. SUM P0*SUM P1
+112. SUM CC0*SUM CC1*SUM P0*SUM P1*SUM CO
+113. SUM CC0*SUM CC1*SUM P0*SUM P1
+114. SUM CC0*SUM CC1*SUM P0*SUM CO
+115. SUM CC0*SUM CC1*SUM P1*SUM CO
+116. SUM CC0*SUM P0*SUM P1*SUM CO
+117. SUM CC1*SUM P0*SUM P1*SUM CO
+118. Max(P0)
+119. Min(P0)
+120. Max(P1)
+121. Min(P1)
+122. Max(CC0)
+123. Min(CC0)
+124. Max(CC1)
+125. Min(CC1)
+126. Max(CO)
+127. Min(CO)
+128. SUM P1 * SUM P0 * SUM CO
+129. SUM CC0 * SUM P1 * SUM PO
+130. SUM CC0 * SUM P1 * SUM CO
+131. SUM CC0 * SUM P0 * SUM CO
+132. SUM CC1 * SUM P1 * SUM PO
+133. SUM CC1 * SUM P0 * SUM CO
+134. SUM CC1 * SUM P1 * SUM CO
+135. SUM CC0 * SUM CC1 * SUM P1
+136. SUM CC0 * SUM CC1 * SUM P0
+137. SUM CC0 * SUM CC1 * SUM CO
+138. co 1 - 5
+139. co 5 - 10
+140. co 10 - 15
+141. co 15 - 20
+142. co 20 - 25
+143. co 25 - 30
+144. co 30 - 35
+145. co 35 - 40
+146. co 40 - 45
+147. co 45 - 50
+148. co 50 - 55
+149. co 55 - 60
+150. co 60 - 65
+151. co 65 - 70
+152. co 70 - 75
+153. co 75 - 80
+154. co 80 - 85
+155. co 85 - 90
+156. co 90 - 95
+157. co 95 - 100
+158. co > 100
+159. co 0.1 - 0.2
+160. co 0.2 - 0.3
+161. co 0.3 - 0.4
+162. co 0.4 - 0.5
+163. co 0.5 - 0.6
+164. co 0.6 - 0.7
+165. co 0.7 - 0.8
+166. co 0.8 - 0.9
+167. co 0.9 - 1.0
+168. Circuit Evaluation Time
+169. Sum CC(S)
+170. Max CC(S)
+171. Min CC(S)
+172. Average CCS
+173. Median High CCS
+174. Median Low CCS
+175. Normalised CCS
+176. Standard Deviation CCS
+177. Harmonic Mean CCS
+178. Population Standard Deviation CCS
+179. Population Variance
+180. Variance CCS
+181. Geometric Mean CCS
+182. cc0 1 - 5
+183. cc0 5 - 10
+184. cc0 10 - 15
+185. cc0 15 - 20
+186. cc0 20 - 25
+187. cc0 25 - 30
+188. cc0 30 - 35
+189. cc0 35 - 40
+190. cc0 40 - 45
+191. cc0 45 - 50
+192. cc0 50 - 55
+193. cc0 55 - 60
+194. cc0 60 - 65
+195. cc0 65 - 70
+196. cc0 70 - 75
+197. cc0 75 - 80
+198. cc0 80 - 85
+199. cc0 85 - 90
+200. cc0 90 - 95
+201. cc0 95 - 100
+202. cc0 > 100
+203. cc1 1 - 5
+204. cc1 5 - 10
+205. cc1 10 - 15
+206. cc1 15 - 20
+207. cc1 20 - 25
+208. cc1 25 - 30
+209. cc1 30 - 35
+210. cc1 35 - 40
+211. cc1 40 - 45
+212. cc1 45 - 50
+213. cc1 50 - 55
+214. cc1 55 - 60
+215. cc1 60 - 65
+216. cc1 65 - 70
+217. cc1 70 - 75
+218. cc1 75 - 80
+219. cc1 80 - 85
+220. cc1 85 - 90
+221. cc1 90 - 95
+222. cc1 95 - 100
+223. cc1 > 100
+224. ccs 1 - 5
+225. ccs 5 - 10
+226. ccs 10 - 15
+227. ccs 15 - 20
+228. ccs 20 - 25
+229. ccs 25 - 30
+230. ccs 30 - 35
+231. ccs 35 - 40
+232. ccs 40 - 45
+233. ccs 45 - 50
+234. ccs 50 - 55
+235. ccs 55 - 60
+236. ccs 60 - 65
+237. ccs 65 - 70
+238. ccs 70 - 75
+239. ccs 75 - 80
+240. ccs 80 - 85
+241. ccs 85 - 90
+242. ccs 90 - 95
+243. ccs 95 - 100
+244. ccs > 100
+245. No. of BUFF
+
+
+
+
+246. Sum fan_in_1
+247. Max fan_in_1
+248. Min fan_in_1
+249. Average fan_in_1
+250. Median High fan_in_1
+251. Median Low fan_in_1
+252. Normalised fan_in_1
+253. Standard Deviation fan_in_1
+254. Harmonic Mean fan_in_1
+255. Population Standard Deviation fan_in_1
+256. Population Variance fan_in_1
+257. Variance fan_in_1
+258. Geometric Mean fan_in_1
+259. fan_in_1 1 - 5
+260. fan_in_1 5 - 10
+261. fan_in_1 10 - 15
+262. fan_in_1 15 - 20
+263. fan_in_1 20 - 25
+264. fan_in_1 25 - 30
+265. fan_in_1 30 - 35
+266. fan_in_1 35 - 40
+267. fan_in_1 40 - 45
+268. fan_in_1 45 - 50
+269. fan_in_1 50 - 55
+270. fan_in_1 55 - 60
+271. fan_in_1 60 - 65
+272. fan_in_1 65 - 70
+273. fan_in_1 70 - 75
+274. fan_in_1 75 - 80
+275. fan_in_1 80 - 85
+276. fan_in_1 85 - 90
+277. fan_in_1 90 - 95
+278. fan_in_1 95 - 100
+279. fan_in_1 > 100
+
+280. Sum fan_in_2
+281. Max fan_in_2
+282. Min fan_in_2
+283. Average fan_in_2
+284. Median High fan_in_2
+285. Median Low fan_in_2
+286. Normalised fan_in_2
+287. Standard Deviation fan_in_2
+288. Harmonic Mean fan_in_2
+289. Population Standard Deviation fan_in_2
+290. Population Variance fan_in_2
+291. Variance fan_in_2
+292. Geometric Mean fan_in_2
+293. fan_in_2 1 - 5
+294. fan_in_2 5 - 10
+295. fan_in_2 10 - 15
+296. fan_in_2 15 - 20
+297. fan_in_2 20 - 25
+298. fan_in_2 25 - 30
+299. fan_in_2 30 - 35
+300. fan_in_2 35 - 40
+301. fan_in_2 40 - 45
+302. fan_in_2 45 - 50
+303. fan_in_2 50 - 55
+304. fan_in_2 55 - 60
+305. fan_in_2 60 - 65
+306. fan_in_2 65 - 70
+307. fan_in_2 70 - 75
+308. fan_in_2 75 - 80
+309. fan_in_2 80 - 85
+310. fan_in_2 85 - 90
+311. fan_in_2 90 - 95
+312. fan_in_2 95 - 100
+313. fan_in_2 > 100
+
+314. Sum fan_in_3
+315. Max fan_in_3
+316. Min fan_in_3
+317. Average fan_in_3
+318. Median High fan_in_3
+319. Median Low fan_in_3
+320. Normalised fan_in_3
+321. Standard Deviation fan_in_3
+322. Harmonic Mean fan_in_3
+323. Population Standard Deviation fan_in_3
+324. Population Variance fan_in_3
+325. Variance fan_in_3
+326. Geometric Mean fan_in_3
+327. fan_in_3 1 - 5
+328. fan_in_3 5 - 10
+329. fan_in_3 10 - 15
+330. fan_in_3 15 - 20
+331. fan_in_3 20 - 25
+332. fan_in_3 25 - 30
+333. fan_in_3 30 - 35
+334. fan_in_3 35 - 40
+335. fan_in_3 40 - 45
+336. fan_in_3 45 - 50
+337. fan_in_3 50 - 55
+338. fan_in_3 55 - 60
+339. fan_in_3 60 - 65
+340. fan_in_3 65 - 70
+341. fan_in_3 70 - 75
+342. fan_in_3 75 - 80
+343. fan_in_3 80 - 85
+344. fan_in_3 85 - 90
+345. fan_in_3 90 - 95
+346. fan_in_3 95 - 100
+347. fan_in_3 > 100
+
+348. Sum fan_in_4
+349. Max fan_in_4
+350. Min fan_in_4
+351. Average fan_in_4
+352. Median High fan_in_4
+353. Median Low fan_in_4
+354. Normalised fan_in_4
+355. Standard Deviation fan_in_4
+356. Harmonic Mean fan_in_4
+357. Population Standard Deviation fan_in_4
+358. Population Variance fan_in_4
+359. Variance fan_in_4
+360. Geometric Mean fan_in_4
+361. fan_in_4 1 - 5
+362. fan_in_4 5 - 10
+363. fan_in_4 10 - 15
+364. fan_in_4 15 - 20
+365. fan_in_4 20 - 25
+366. fan_in_4 25 - 30
+367. fan_in_4 30 - 35
+368. fan_in_4 35 - 40
+369. fan_in_4 40 - 45
+370. fan_in_4 45 - 50
+371. fan_in_4 50 - 55
+372. fan_in_4 55 - 60
+373. fan_in_4 60 - 65
+374. fan_in_4 65 - 70
+375. fan_in_4 70 - 75
+376. fan_in_4 75 - 80
+377. fan_in_4 80 - 85
+378. fan_in_4 85 - 90
+379. fan_in_4 90 - 95
+380. fan_in_4 95 - 100
+381. fan_in_4 > 100
+
+382. Sum fan_in_5
+383. Max fan_in_5
+384. Min fan_in_5
+385. Average fan_in_5
+386. Median High fan_in_5
+387. Median Low fan_in_5
+388. Normalised fan_in_5
+389. Standard Deviation fan_in_5
+390. Harmonic Mean fan_in_5
+391. Population Standard Deviation fan_in_5
+392. Population Variance fan_in_5
+393. Variance fan_in_5
+394. Geometric Mean fan_in_5
+395. fan_in_5 1 - 5
+396. fan_in_5 5 - 10
+397. fan_in_5 10 - 15
+398. fan_in_5 15 - 20
+399. fan_in_5 20 - 25
+400. fan_in_5 25 - 30
+401. fan_in_5 30 - 35
+402. fan_in_5 35 - 40
+403. fan_in_5 40 - 45
+404. fan_in_5 45 - 50
+405. fan_in_5 50 - 55
+406. fan_in_5 55 - 60
+407. fan_in_5 60 - 65
+408. fan_in_5 65 - 70
+409. fan_in_5 70 - 75
+410. fan_in_5 75 - 80
+411. fan_in_5 80 - 85
+412. fan_in_5 85 - 90
+413. fan_in_5 90 - 95
+414. fan_in_5 95 - 100
+415. fan_in_5 > 100
+
+416. Sum loop_in_1
+417. Max loop_in_1
+418. Min loop_in_1
+419. Average loop_in_1
+420. Median High loop_in_1
+421. Median Low loop_in_1
+422. Normalised loop_in_1
+423. Standard Deviation loop_in_1
+424. Harmonic Mean loop_in_1
+425. Population Standard Deviation loop_in_1
+426. Population Variance loop_in_1
+427. Variance loop_in_1
+428. Geometric Mean loop_in_1
+429. loop_in_1 1 - 5
+430. loop_in_1 5 - 10
+431. loop_in_1 10 - 15
+432. loop_in_1 15 - 20
+433. loop_in_1 20 - 25
+434. loop_in_1 25 - 30
+435. loop_in_1 30 - 35
+436. loop_in_1 35 - 40
+437. loop_in_1 40 - 45
+438. loop_in_1 45 - 50
+439. loop_in_1 50 - 55
+440. loop_in_1 55 - 60
+441. loop_in_1 60 - 65
+442. loop_in_1 65 - 70
+443. loop_in_1 70 - 75
+444. loop_in_1 75 - 80
+445. loop_in_1 80 - 85
+446. loop_in_1 85 - 90
+447. loop_in_1 90 - 95
+448. loop_in_1 95 - 100
+449. loop_in_1 > 100
+
+450. Sum loop_in_2
+451. Max loop_in_2
+452. Min loop_in_2
+453. Average loop_in_2
+454. Median High loop_in_2
+455. Median Low loop_in_2
+456. Normalised loop_in_2
+457. Standard Deviation loop_in_2
+458. Harmonic Mean loop_in_2
+459. Population Standard Deviation loop_in_2
+460. Population Variance loop_in_2
+461. Variance loop_in_2
+462. Geometric Mean loop_in_2
+463. loop_in_2 1 - 5
+464. loop_in_2 5 - 10
+465. loop_in_2 10 - 15
+466. loop_in_2 15 - 20
+467. loop_in_2 20 - 25
+468. loop_in_2 25 - 30
+469. loop_in_2 30 - 35
+470. loop_in_2 35 - 40
+471. loop_in_2 40 - 45
+472. loop_in_2 45 - 50
+473. loop_in_2 50 - 55
+474. loop_in_2 55 - 60
+475. loop_in_2 60 - 65
+476. loop_in_2 65 - 70
+477. loop_in_2 70 - 75
+478. loop_in_2 75 - 80
+479. loop_in_2 80 - 85
+480. loop_in_2 85 - 90
+481. loop_in_2 90 - 95
+482. loop_in_2 95 - 100
+483. loop_in_2 > 100
+
+484. Sum loop_in_3
+485. Max loop_in_3
+486. Min loop_in_3
+487. Average loop_in_3
+488. Median High loop_in_3
+489. Median Low loop_in_3
+490. Normalised loop_in_3
+491. Standard Deviation loop_in_3
+492. Harmonic Mean loop_in_3
+493. Population Standard Deviation loop_in_3
+494. Population Variance loop_in_3
+495. Variance loop_in_3
+496. Geometric Mean loop_in_3
+497. loop_in_3 1 - 5
+498. loop_in_3 5 - 10
+499. loop_in_3 10 - 15
+500. loop_in_3 15 - 20
+501. loop_in_3 20 - 25
+502. loop_in_3 25 - 30
+503. loop_in_3 30 - 35
+504. loop_in_3 35 - 40
+505. loop_in_3 40 - 45
+506. loop_in_3 45 - 50
+507. loop_in_3 50 - 55
+508. loop_in_3 55 - 60
+509. loop_in_3 60 - 65
+510. loop_in_3 65 - 70
+511. loop_in_3 70 - 75
+512. loop_in_3 75 - 80
+513. loop_in_3 80 - 85
+514. loop_in_3 85 - 90
+515. loop_in_3 90 - 95
+516. loop_in_3 95 - 100
+517. loop_in_3 > 100
+
+518. Sum loop_in_4
+519. Max loop_in_4
+520. Min loop_in_4
+521. Average loop_in_4
+522. Median High loop_in_4
+523. Median Low loop_in_4
+524. Normalised loop_in_4
+525. Standard Deviation loop_in_4
+526. Harmonic Mean loop_in_4
+527. Population Standard Deviation loop_in_4
+528. Population Variance loop_in_4
+529. Variance loop_in_4
+530. Geometric Mean loop_in_4
+531. loop_in_4 1 - 5
+532. loop_in_4 5 - 10
+533. loop_in_4 10 - 15
+534. loop_in_4 15 - 20
+535. loop_in_4 20 - 25
+536. loop_in_4 25 - 30
+537. loop_in_4 30 - 35
+538. loop_in_4 35 - 40
+539. loop_in_4 40 - 45
+540. loop_in_4 45 - 50
+541. loop_in_4 50 - 55
+542. loop_in_4 55 - 60
+543. loop_in_4 60 - 65
+544. loop_in_4 65 - 70
+545. loop_in_4 70 - 75
+546. loop_in_4 75 - 80
+547. loop_in_4 80 - 85
+548. loop_in_4 85 - 90
+549. loop_in_4 90 - 95
+550. loop_in_4 95 - 100
+551. loop_in_4 > 100
+
+552. Sum loop_in_5
+553. Max loop_in_5
+554. Min loop_in_5
+555. Average loop_in_5
+556. Median High loop_in_5
+557. Median Low loop_in_5
+558. Normalised loop_in_5
+559. Standard Deviation loop_in_5
+560. Harmonic Mean loop_in_5
+561. Population Standard Deviation loop_in_5
+562. Population Variance loop_in_5
+563. Variance loop_in_5
+564. Geometric Mean loop_in_5
+565. loop_in_5 1 - 5
+566. loop_in_5 5 - 10
+567. loop_in_5 10 - 15
+568. loop_in_5 15 - 20
+569. loop_in_5 20 - 25
+570. loop_in_5 25 - 30
+571. loop_in_5 30 - 35
+572. loop_in_5 35 - 40
+573. loop_in_5 40 - 45
+574. loop_in_5 45 - 50
+575. loop_in_5 50 - 55
+576. loop_in_5 55 - 60
+577. loop_in_5 60 - 65
+578. loop_in_5 65 - 70
+579. loop_in_5 70 - 75
+580. loop_in_5 75 - 80
+581. loop_in_5 80 - 85
+582. loop_in_5 85 - 90
+583. loop_in_5 90 - 95
+584. loop_in_5 95 - 100
+585. loop_in_5 > 100
+
+586. Sum loop_out_1
+587. Max loop_out_1
+588. Min loop_out_1
+589. Average loop_out_1
+590. Median High loop_out_1
+591. Median Low loop_out_1
+592. Normalised loop_out_1
+593. Standard Deviation loop_out_1
+594. Harmonic Mean loop_out_1
+595. Population Standard Deviation loop_out_1
+596. Population Variance loop_out_1
+597. Variance loop_out_1
+598. Geometric Mean loop_out_1
+599. loop_out_1 1 - 5
+600. loop_out_1 5 - 10
+601. loop_out_1 10 - 15
+602. loop_out_1 15 - 20
+603. loop_out_1 20 - 25
+604. loop_out_1 25 - 30
+605. loop_out_1 30 - 35
+606. loop_out_1 35 - 40
+607. loop_out_1 40 - 45
+608. loop_out_1 45 - 50
+609. loop_out_1 50 - 55
+610. loop_out_1 55 - 60
+611. loop_out_1 60 - 65
+612. loop_out_1 65 - 70
+613. loop_out_1 70 - 75
+614. loop_out_1 75 - 80
+615. loop_out_1 80 - 85
+616. loop_out_1 85 - 90
+617. loop_out_1 90 - 95
+618. loop_out_1 95 - 100
+619. loop_out_1 > 100
+
+620. Sum loop_out_2
+621. Max loop_out_2
+622. Min loop_out_2
+623. Average loop_out_2
+624. Median High loop_out_2
+625. Median Low loop_out_2
+626. Normalised loop_out_2
+627. Standard Deviation loop_out_2
+628. Harmonic Mean loop_out_2
+629. Population Standard Deviation loop_out_2
+630. Population Variance loop_out_2
+631. Variance loop_out_2
+632. Geometric Mean loop_out_2
+633. loop_out_2 1 - 5
+634. loop_out_2 5 - 10
+635. loop_out_2 10 - 15
+636. loop_out_2 15 - 20
+637. loop_out_2 20 - 25
+638. loop_out_2 25 - 30
+639. loop_out_2 30 - 35
+640. loop_out_2 35 - 40
+641. loop_out_2 40 - 45
+642. loop_out_2 45 - 50
+643. loop_out_2 50 - 55
+644. loop_out_2 55 - 60
+645. loop_out_2 60 - 65
+646. loop_out_2 65 - 70
+647. loop_out_2 70 - 75
+648. loop_out_2 75 - 80
+649. loop_out_2 80 - 85
+650. loop_out_2 85 - 90
+651. loop_out_2 90 - 95
+652. loop_out_2 95 - 100
+653. loop_out_2 > 100
+
+654. Sum loop_out_3
+655. Max loop_out_3
+656. Min loop_out_3
+657. Average loop_out_3
+658. Median High loop_out_3
+659. Median Low loop_out_3
+660. Normalised loop_out_3
+661. Standard Deviation loop_out_3
+662. Harmonic Mean loop_out_3
+663. Population Standard Deviation loop_out_3
+664. Population Variance loop_out_3
+665. Variance loop_out_3
+666. Geometric Mean loop_out_3
+667. loop_out_3 1 - 5
+668. loop_out_3 5 - 10
+669. loop_out_3 10 - 15
+670. loop_out_3 15 - 20
+671. loop_out_3 20 - 25
+672. loop_out_3 25 - 30
+673. loop_out_3 30 - 35
+674. loop_out_3 35 - 40
+675. loop_out_3 40 - 45
+676. loop_out_3 45 - 50
+677. loop_out_3 50 - 55
+678. loop_out_3 55 - 60
+679. loop_out_3 60 - 65
+680. loop_out_3 65 - 70
+681. loop_out_3 70 - 75
+682. loop_out_3 75 - 80
+683. loop_out_3 80 - 85
+684. loop_out_3 85 - 90
+685. loop_out_3 90 - 95
+686. loop_out_3 95 - 100
+687. loop_out_3 > 100
+
+688. Sum loop_out_4
+689. Max loop_out_4
+690. Min loop_out_4
+691. Average loop_out_4
+692. Median High loop_out_4
+693. Median Low loop_out_4
+694. Normalised loop_out_4
+695. Standard Deviation loop_out_4
+696. Harmonic Mean loop_out_4
+697. Population Standard Deviation loop_out_4
+698. Population Variance loop_out_4
+699. Variance loop_out_4
+700. Geometric Mean loop_out_4
+701. loop_out_4 1 - 5
+702. loop_out_4 5 - 10
+703. loop_out_4 10 - 15
+704. loop_out_4 15 - 20
+705. loop_out_4 20 - 25
+706. loop_out_4 25 - 30
+707. loop_out_4 30 - 35
+708. loop_out_4 35 - 40
+709. loop_out_4 40 - 45
+710. loop_out_4 45 - 50
+711. loop_out_4 50 - 55
+712. loop_out_4 55 - 60
+713. loop_out_4 60 - 65
+714. loop_out_4 65 - 70
+715. loop_out_4 70 - 75
+716. loop_out_4 75 - 80
+717. loop_out_4 80 - 85
+718. loop_out_4 85 - 90
+719. loop_out_4 90 - 95
+720. loop_out_4 95 - 100
+721. loop_out_4 > 100
+
+722. Sum loop_out_5
+723. Max loop_out_5
+724. Min loop_out_5
+725. Average loop_out_5
+726. Median High loop_out_5
+727. Median Low loop_out_5
+728. Normalised loop_out_5
+729. Standard Deviation loop_out_5
+730. Harmonic Mean loop_out_5
+731. Population Standard Deviation loop_out_5
+732. Population Variance loop_out_5
+733. Variance loop_out_5
+734. Geometric Mean loop_out_5
+735. loop_out_5 1 - 5
+736. loop_out_5 5 - 10
+737. loop_out_5 10 - 15
+738. loop_out_5 15 - 20
+739. loop_out_5 20 - 25
+740. loop_out_5 25 - 30
+741. loop_out_5 30 - 35
+742. loop_out_5 35 - 40
+743. loop_out_5 40 - 45
+744. loop_out_5 45 - 50
+745. loop_out_5 50 - 55
+746. loop_out_5 55 - 60
+747. loop_out_5 60 - 65
+748. loop_out_5 65 - 70
+749. loop_out_5 70 - 75
+750. loop_out_5 75 - 80
+751. loop_out_5 80 - 85
+752. loop_out_5 85 - 90
+753. loop_out_5 90 - 95
+754. loop_out_5 95 - 100
+755. loop_out_5 > 100
+
+
+756. Sum in_nearest_pin
+757. Max in_nearest_pin
+758. Min in_nearest_pin
+759. Average in_nearest_pin
+760. Median High in_nearest_pin
+761. Median Low in_nearest_pin
+762. Normalised in_nearest_pin
+763. Standard Deviation in_nearest_pin
+764. Harmonic Mean in_nearest_pin
+765. Population Standard Deviation in_nearest_pin
+766. Population Variance in_nearest_pin
+767. Variance in_nearest_pin
+768. Geometric Mean in_nearest_pin
+769. in_nearest_pin 1 - 5
+770. in_nearest_pin 5 - 10
+771. in_nearest_pin 10 - 15
+772. in_nearest_pin 15 - 20
+773. in_nearest_pin 20 - 25
+774. in_nearest_pin 25 - 30
+775. in_nearest_pin 30 - 35
+776. in_nearest_pin 35 - 40
+777. in_nearest_pin 40 - 45
+778. in_nearest_pin 45 - 50
+779. in_nearest_pin 50 - 55
+780. in_nearest_pin 55 - 60
+781. in_nearest_pin 60 - 65
+782. in_nearest_pin 65 - 70
+783. in_nearest_pin 70 - 75
+784. in_nearest_pin 75 - 80
+785. in_nearest_pin 80 - 85
+786. in_nearest_pin 85 - 90
+787. in_nearest_pin 90 - 95
+788. in_nearest_pin 95 - 100
+789. in_nearest_pin > 100
+
+790. Sum out_nearest_pout
+791. Max out_nearest_pout
+792. Min out_nearest_pout
+793. Average out_nearest_pout
+794. Median High out_nearest_pout
+795. Median Low out_nearest_pout
+796. Normalised out_nearest_pout
+797. Standard Deviation out_nearest_pout
+798. Harmonic Mean out_nearest_pout
+799. Population Standard Deviation out_nearest_pout
+800. Population Variance out_nearest_pout
+801. Variance out_nearest_pout
+802. Geometric Mean out_nearest_pout
+803. out_nearest_pout 1 - 5
+804. out_nearest_pout 5 - 10
+805. out_nearest_pout 10 - 15
+806. out_nearest_pout 15 - 20
+807. out_nearest_pout 20 - 25
+808. out_nearest_pout 25 - 30
+809. out_nearest_pout 30 - 35
+810. out_nearest_pout 35 - 40
+811. out_nearest_pout 40 - 45
+812. out_nearest_pout 45 - 50
+813. out_nearest_pout 50 - 55
+814. out_nearest_pout 55 - 60
+815. out_nearest_pout 60 - 65
+816. out_nearest_pout 65 - 70
+817. out_nearest_pout 70 - 75
+818. out_nearest_pout 75 - 80
+819. out_nearest_pout 80 - 85
+820. out_nearest_pout 85 - 90
+821. out_nearest_pout 90 - 95
+822. out_nearest_pout 95 - 100
+823. out_nearest_pout > 100
+
+824. Sum in_ff_1
+825. Max in_ff_1
+826. Min in_ff_1
+827. Average in_ff_1
+828. Median High in_ff_1
+829. Median Low in_ff_1
+830. Normalised in_ff_1
+831. Standard Deviation in_ff_1
+832. Harmonic Mean in_ff_1
+833. Population Standard Deviation in_ff_1
+834. Population Variance in_ff_1
+835. Variance in_ff_1
+836. Geometric Mean in_ff_1
+837. in_ff_1 1 - 5
+838. in_ff_1 5 - 10
+839. in_ff_1 10 - 15
+840. in_ff_1 15 - 20
+841. in_ff_1 20 - 25
+842. in_ff_1 25 - 30
+843. in_ff_1 30 - 35
+844. in_ff_1 35 - 40
+845. in_ff_1 40 - 45
+846. in_ff_1 45 - 50
+847. in_ff_1 50 - 55
+848. in_ff_1 55 - 60
+849. in_ff_1 60 - 65
+850. in_ff_1 65 - 70
+851. in_ff_1 70 - 75
+852. in_ff_1 75 - 80
+853. in_ff_1 80 - 85
+854. in_ff_1 85 - 90
+855. in_ff_1 90 - 95
+856. in_ff_1 95 - 100
+857. in_ff_1 > 100
+
+858. Sum in_ff_2
+859. Max in_ff_2
+860. Min in_ff_2
+861. Average in_ff_2
+862. Median High in_ff_2
+863. Median Low in_ff_2
+864. Normalised in_ff_2
+865. Standard Deviation in_ff_2
+866. Harmonic Mean in_ff_2
+867. Population Standard Deviation in_ff_2
+868. Population Variance in_ff_2
+869. Variance in_ff_2
+870. Geometric Mean in_ff_2
+871. in_ff_2 1 - 5
+872. in_ff_2 5 - 10
+873. in_ff_2 10 - 15
+874. in_ff_2 15 - 20
+875. in_ff_2 20 - 25
+876. in_ff_2 25 - 30
+877. in_ff_2 30 - 35
+878. in_ff_2 35 - 40
+879. in_ff_2 40 - 45
+880. in_ff_2 45 - 50
+881. in_ff_2 50 - 55
+882. in_ff_2 55 - 60
+883. in_ff_2 60 - 65
+884. in_ff_2 65 - 70
+885. in_ff_2 70 - 75
+886. in_ff_2 75 - 80
+887. in_ff_2 80 - 85
+888. in_ff_2 85 - 90
+889. in_ff_2 90 - 95
+890. in_ff_2 95 - 100
+891. in_ff_2 > 100
+
+892. Sum in_ff_3
+893. Max in_ff_3
+894. Min in_ff_3
+895. Average in_ff_3
+896. Median High in_ff_3
+897. Median Low in_ff_3
+898. Normalised in_ff_3
+899. Standard Deviation in_ff_3
+900. Harmonic Mean in_ff_3
+901. Population Standard Deviation in_ff_3
+902. Population Variance in_ff_3
+903. Variance in_ff_3
+904. Geometric Mean in_ff_3
+905. in_ff_3 1 - 5
+906. in_ff_3 5 - 10
+907. in_ff_3 10 - 15
+908. in_ff_3 15 - 20
+909. in_ff_3 20 - 25
+910. in_ff_3 25 - 30
+911. in_ff_3 30 - 35
+912. in_ff_3 35 - 40
+913. in_ff_3 40 - 45
+914. in_ff_3 45 - 50
+915. in_ff_3 50 - 55
+916. in_ff_3 55 - 60
+917. in_ff_3 60 - 65
+918. in_ff_3 65 - 70
+919. in_ff_3 70 - 75
+920. in_ff_3 75 - 80
+921. in_ff_3 80 - 85
+922. in_ff_3 85 - 90
+923. in_ff_3 90 - 95
+924. in_ff_3 95 - 100
+925. in_ff_3 > 100
+
+926. Sum in_ff_4
+927. Max in_ff_4
+928. Min in_ff_4
+929. Average in_ff_4
+930. Median High in_ff_4
+931. Median Low in_ff_4
+932. Normalised in_ff_4
+933. Standard Deviation in_ff_4
+934. Harmonic Mean in_ff_4
+935. Population Standard Deviation in_ff_4
+936. Population Variance in_ff_4
+937. Variance in_ff_4
+938. Geometric Mean in_ff_4
+939. in_ff_4 1 - 5
+940. in_ff_4 5 - 10
+941. in_ff_4 10 - 15
+942. in_ff_4 15 - 20
+943. in_ff_4 20 - 25
+944. in_ff_4 25 - 30
+945. in_ff_4 30 - 35
+946. in_ff_4 35 - 40
+947. in_ff_4 40 - 45
+948. in_ff_4 45 - 50
+949. in_ff_4 50 - 55
+950. in_ff_4 55 - 60
+951. in_ff_4 60 - 65
+952. in_ff_4 65 - 70
+953. in_ff_4 70 - 75
+954. in_ff_4 75 - 80
+955. in_ff_4 80 - 85
+956. in_ff_4 85 - 90
+957. in_ff_4 90 - 95
+958. in_ff_4 95 - 100
+959. in_ff_4 > 100
+
+960. Sum in_ff_5
+961. Max in_ff_5
+962. Min in_ff_5
+963. Average in_ff_5
+964. Median High in_ff_5
+965. Median Low in_ff_5
+966. Normalised in_ff_5
+967. Standard Deviation in_ff_5
+968. Harmonic Mean in_ff_5
+969. Population Standard Deviation in_ff_5
+970. Population Variance in_ff_5
+971. Variance in_ff_5
+972. Geometric Mean in_ff_5
+973. in_ff_5 1 - 5
+974. in_ff_5 5 - 10
+975. in_ff_5 10 - 15
+976. in_ff_5 15 - 20
+977. in_ff_5 20 - 25
+978. in_ff_5 25 - 30
+979. in_ff_5 30 - 35
+980. in_ff_5 35 - 40
+981. in_ff_5 40 - 45
+982. in_ff_5 45 - 50
+983. in_ff_5 50 - 55
+984. in_ff_5 55 - 60
+985. in_ff_5 60 - 65
+986. in_ff_5 65 - 70
+987. in_ff_5 70 - 75
+988. in_ff_5 75 - 80
+989. in_ff_5 80 - 85
+990. in_ff_5 85 - 90
+991. in_ff_5 90 - 95
+992. in_ff_5 95 - 100
+993. in_ff_5 > 100
+
+994. Sum out_ff_1
+995. Max out_ff_1
+996. Min out_ff_1
+997. Average out_ff_1
+998. Median High out_ff_1
+999. Median Low out_ff_1
+1000. Normalised out_ff_1
+1001. Standard Deviation out_ff_1
+1002. Harmonic Mean out_ff_1
+1003. Population Standard Deviation out_ff_1
+1004. Population Variance out_ff_1
+1005. Variance out_ff_1
+1006. Geometric Mean out_ff_1
+1007. out_ff_1 1 - 5
+1008. out_ff_1 5 - 10
+1009. out_ff_1 10 - 15
+1010. out_ff_1 15 - 20
+1011. out_ff_1 20 - 25
+1012. out_ff_1 25 - 30
+1013. out_ff_1 30 - 35
+1014. out_ff_1 35 - 40
+1015. out_ff_1 40 - 45
+1016. out_ff_1 45 - 50
+1017. out_ff_1 50 - 55
+1018. out_ff_1 55 - 60
+1019. out_ff_1 60 - 65
+1020. out_ff_1 65 - 70
+1021. out_ff_1 70 - 75
+1022. out_ff_1 75 - 80
+1023. out_ff_1 80 - 85
+1024. out_ff_1 85 - 90
+1025. out_ff_1 90 - 95
+1026. out_ff_1 95 - 100
+1027. out_ff_1 > 100
+
+1028. Sum out_ff_2
+1029. Max out_ff_2
+1030. Min out_ff_2
+1031. Average out_ff_2
+1032. Median High out_ff_2
+1033. Median Low out_ff_2
+1034. Normalised out_ff_2
+1035. Standard Deviation out_ff_2
+1036. Harmonic Mean out_ff_2
+1037. Population Standard Deviation out_ff_2
+1038. Population Variance out_ff_2
+1039. Variance out_ff_2
+1040. Geometric Mean out_ff_2
+1041. out_ff_2 1 - 5
+1042. out_ff_2 5 - 10
+1043. out_ff_2 10 - 15
+1044. out_ff_2 15 - 20
+1045. out_ff_2 20 - 25
+1046. out_ff_2 25 - 30
+1047. out_ff_2 30 - 35
+1048. out_ff_2 35 - 40
+1049. out_ff_2 40 - 45
+1050. out_ff_2 45 - 50
+1051. out_ff_2 50 - 55
+1052. out_ff_2 55 - 60
+1053. out_ff_2 60 - 65
+1054. out_ff_2 65 - 70
+1055. out_ff_2 70 - 75
+1056. out_ff_2 75 - 80
+1057. out_ff_2 80 - 85
+1058. out_ff_2 85 - 90
+1059. out_ff_2 90 - 95
+1060. out_ff_2 95 - 100
+1061. out_ff_2 > 100
+
+1062. Sum out_ff_3
+1063. Max out_ff_3
+1064. Min out_ff_3
+1065. Average out_ff_3
+1066. Median High out_ff_3
+1067. Median Low out_ff_3
+1068. Normalised out_ff_3
+1069. Standard Deviation out_ff_3
+1070. Harmonic Mean out_ff_3
+1071. Population Standard Deviation out_ff_3
+1072. Population Variance out_ff_3
+1073. Variance out_ff_3
+1074. Geometric Mean out_ff_3
+1075. out_ff_3 1 - 5
+1076. out_ff_3 5 - 10
+1077. out_ff_3 10 - 15
+1078. out_ff_3 15 - 20
+1079. out_ff_3 20 - 25
+1080. out_ff_3 25 - 30
+1081. out_ff_3 30 - 35
+1082. out_ff_3 35 - 40
+1083. out_ff_3 40 - 45
+1084. out_ff_3 45 - 50
+1085. out_ff_3 50 - 55
+1086. out_ff_3 55 - 60
+1087. out_ff_3 60 - 65
+1088. out_ff_3 65 - 70
+1089. out_ff_3 70 - 75
+1090. out_ff_3 75 - 80
+1091. out_ff_3 80 - 85
+1092. out_ff_3 85 - 90
+1093. out_ff_3 90 - 95
+1094. out_ff_3 95 - 100
+1095. out_ff_3 > 100
+
+1096. Sum out_ff_4
+1097. Max out_ff_4
+1098. Min out_ff_4
+1099. Average out_ff_4
+1100. Median High out_ff_4
+1101. Median Low out_ff_4
+1102. Normalised out_ff_4
+1103. Standard Deviation out_ff_4
+1104. Harmonic Mean out_ff_4
+1105. Population Standard Deviation out_ff_4
+1106. Population Variance out_ff_4
+1107. Variance out_ff_4
+1108. Geometric Mean out_ff_4
+1109. out_ff_4 1 - 5
+1110. out_ff_4 5 - 10
+1111. out_ff_4 10 - 15
+1112. out_ff_4 15 - 20
+1113. out_ff_4 20 - 25
+1114. out_ff_4 25 - 30
+1115. out_ff_4 30 - 35
+1116. out_ff_4 35 - 40
+1117. out_ff_4 40 - 45
+1118. out_ff_4 45 - 50
+1119. out_ff_4 50 - 55
+1120. out_ff_4 55 - 60
+1121. out_ff_4 60 - 65
+1122. out_ff_4 65 - 70
+1123. out_ff_4 70 - 75
+1124. out_ff_4 75 - 80
+1125. out_ff_4 80 - 85
+1126. out_ff_4 85 - 90
+1127. out_ff_4 90 - 95
+1128. out_ff_4 95 - 100
+1129. out_ff_4 > 100
+
+1130. Sum out_ff_5
+1131. Max out_ff_5
+1132. Min out_ff_5
+1133. Average out_ff_5
+1134. Median High out_ff_5
+1135. Median Low out_ff_5
+1136. Normalised out_ff_5
+1137. Standard Deviation out_ff_5
+1138. Harmonic Mean out_ff_5
+1139. Population Standard Deviation out_ff_5
+1140. Population Variance out_ff_5
+1141. Variance out_ff_5
+1142. Geometric Mean out_ff_5
+1143. out_ff_5 1 - 5
+1144. out_ff_5 5 - 10
+1145. out_ff_5 10 - 15
+1146. out_ff_5 15 - 20
+1147. out_ff_5 20 - 25
+1148. out_ff_5 25 - 30
+1149. out_ff_5 30 - 35
+1150. out_ff_5 35 - 40
+1151. out_ff_5 40 - 45
+1152. out_ff_5 45 - 50
+1153. out_ff_5 50 - 55
+1154. out_ff_5 55 - 60
+1155. out_ff_5 60 - 65
+1156. out_ff_5 65 - 70
+1157. out_ff_5 70 - 75
+1158. out_ff_5 75 - 80
+1159. out_ff_5 80 - 85
+1160. out_ff_5 85 - 90
+1161. out_ff_5 90 - 95
+1162. out_ff_5 95 - 100
+1163. out_ff_5 > 100
+
+1164. Sum in_nearest_ff
+1165. Max in_nearest_ff
+1166. Min in_nearest_ff
+1167. Average in_nearest_ff
+1168. Median High in_nearest_ff
+1169. Median Low in_nearest_ff
+1170. Normalised in_nearest_ff
+1171. Standard Deviation in_nearest_ff
+1172. Harmonic Mean in_nearest_ff
+1173. Population Standard Deviation in_nearest_ff
+1174. Population Variance in_nearest_ff
+1175. Variance in_nearest_ff
+1176. Geometric Mean in_nearest_ff
+1177. in_nearest_ff 1 - 5
+1178. in_nearest_ff 5 - 10
+1179. in_nearest_ff 10 - 15
+1180. in_nearest_ff 15 - 20
+1181. in_nearest_ff 20 - 25
+1182. in_nearest_ff 25 - 30
+1183. in_nearest_ff 30 - 35
+1184. in_nearest_ff 35 - 40
+1185. in_nearest_ff 40 - 45
+1186. in_nearest_ff 45 - 50
+1187. in_nearest_ff 50 - 55
+1188. in_nearest_ff 55 - 60
+1189. in_nearest_ff 60 - 65
+1190. in_nearest_ff 65 - 70
+1191. in_nearest_ff 70 - 75
+1192. in_nearest_ff 75 - 80
+1193. in_nearest_ff 80 - 85
+1194. in_nearest_ff 85 - 90
+1195. in_nearest_ff 90 - 95
+1196. in_nearest_ff 95 - 100
+1197. in_nearest_ff > 100
+
+1198. Sum out_nearest_ff
+1199. Max out_nearest_ff
+1200. Min out_nearest_ff
+1201. Average out_nearest_ff
+1202. Median High out_nearest_ff
+1203. Median Low out_nearest_ff
+1204. Normalised out_nearest_ff
+1205. Standard Deviation out_nearest_ff
+1206. Harmonic Mean out_nearest_ff
+1207. Population Standard Deviation out_nearest_ff
+1208. Population Variance out_nearest_ff
+1209. Variance out_nearest_ff
+1210. Geometric Mean out_nearest_ff
+1211. out_nearest_ff 1 - 5
+1212. out_nearest_ff 5 - 10
+1213. out_nearest_ff 10 - 15
+1214. out_nearest_ff 15 - 20
+1215. out_nearest_ff 20 - 25
+1216. out_nearest_ff 25 - 30
+1217. out_nearest_ff 30 - 35
+1218. out_nearest_ff 35 - 40
+1219. out_nearest_ff 40 - 45
+1220. out_nearest_ff 45 - 50
+1221. out_nearest_ff 50 - 55
+1222. out_nearest_ff 55 - 60
+1223. out_nearest_ff 60 - 65
+1224. out_nearest_ff 65 - 70
+1225. out_nearest_ff 70 - 75
+1226. out_nearest_ff 75 - 80
+1227. out_nearest_ff 80 - 85
+1228. out_nearest_ff 85 - 90
+1229. out_nearest_ff 90 - 95
+1230. out_nearest_ff 95 - 100
+1231. out_nearest_ff > 100
+
+1232. Sum in_const_1
+1233. Max in_const_1
+1234. Min in_const_1
+1235. Average in_const_1
+1236. Median High in_const_1
+1237. Median Low in_const_1
+1238. Normalised in_const_1
+1239. Standard Deviation in_const_1
+1240. Harmonic Mean in_const_1
+1241. Population Standard Deviation in_const_1
+1242. Population Variance in_const_1
+1243. Variance in_const_1
+1244. Geometric Mean in_const_1
+1245. in_const_1 1 - 5
+1246. in_const_1 5 - 10
+1247. in_const_1 10 - 15
+1248. in_const_1 15 - 20
+1249. in_const_1 20 - 25
+1250. in_const_1 25 - 30
+1251. in_const_1 30 - 35
+1252. in_const_1 35 - 40
+1253. in_const_1 40 - 45
+1254. in_const_1 45 - 50
+1255. in_const_1 50 - 55
+1256. in_const_1 55 - 60
+1257. in_const_1 60 - 65
+1258. in_const_1 65 - 70
+1259. in_const_1 70 - 75
+1260. in_const_1 75 - 80
+1261. in_const_1 80 - 85
+1262. in_const_1 85 - 90
+1263. in_const_1 90 - 95
+1264. in_const_1 95 - 100
+1265. in_const_1 > 100
+
+1266. Sum in_const_2
+1267. Max in_const_2
+1268. Min in_const_2
+1269. Average in_const_2
+1270. Median High in_const_2
+1271. Median Low in_const_2
+1272. Normalised in_const_2
+1273. Standard Deviation in_const_2
+1274. Harmonic Mean in_const_2
+1275. Population Standard Deviation in_const_2
+1276. Population Variance in_const_2
+1277. Variance in_const_2
+1278. Geometric Mean in_const_2
+1279. in_const_2 1 - 5
+1280. in_const_2 5 - 10
+1281. in_const_2 10 - 15
+1282. in_const_2 15 - 20
+1283. in_const_2 20 - 25
+1284. in_const_2 25 - 30
+1285. in_const_2 30 - 35
+1286. in_const_2 35 - 40
+1287. in_const_2 40 - 45
+1288. in_const_2 45 - 50
+1289. in_const_2 50 - 55
+1290. in_const_2 55 - 60
+1291. in_const_2 60 - 65
+1292. in_const_2 65 - 70
+1293. in_const_2 70 - 75
+1294. in_const_2 75 - 80
+1295. in_const_2 80 - 85
+1296. in_const_2 85 - 90
+1297. in_const_2 90 - 95
+1298. in_const_2 95 - 100
+1299. in_const_2 > 100
+
+1300. Sum in_const_3
+1301. Max in_const_3
+1302. Min in_const_3
+1303. Average in_const_3
+1304. Median High in_const_3
+1305. Median Low in_const_3
+1306. Normalised in_const_3
+1307. Standard Deviation in_const_3
+1308. Harmonic Mean in_const_3
+1309. Population Standard Deviation in_const_3
+1310. Population Variance in_const_3
+1311. Variance in_const_3
+1312. Geometric Mean in_const_3
+1313. in_const_3 1 - 5
+1314. in_const_3 5 - 10
+1315. in_const_3 10 - 15
+1316. in_const_3 15 - 20
+1317. in_const_3 20 - 25
+1318. in_const_3 25 - 30
+1319. in_const_3 30 - 35
+1320. in_const_3 35 - 40
+1321. in_const_3 40 - 45
+1322. in_const_3 45 - 50
+1323. in_const_3 50 - 55
+1324. in_const_3 55 - 60
+1325. in_const_3 60 - 65
+1326. in_const_3 65 - 70
+1327. in_const_3 70 - 75
+1328. in_const_3 75 - 80
+1329. in_const_3 80 - 85
+1330. in_const_3 85 - 90
+1331. in_const_3 90 - 95
+1332. in_const_3 95 - 100
+1333. in_const_3 > 100
+
+1334. Sum in_const_4
+1335. Max in_const_4
+1336. Min in_const_4
+1337. Average in_const_4
+1338. Median High in_const_4
+1339. Median Low in_const_4
+1340. Normalised in_const_4
+1341. Standard Deviation in_const_4
+1342. Harmonic Mean in_const_4
+1343. Population Standard Deviation in_const_4
+1344. Population Variance in_const_4
+1345. Variance in_const_4
+1346. Geometric Mean in_const_4
+1347. in_const_4 1 - 5
+1348. in_const_4 5 - 10
+1349. in_const_4 10 - 15
+1350. in_const_4 15 - 20
+1351. in_const_4 20 - 25
+1352. in_const_4 25 - 30
+1353. in_const_4 30 - 35
+1354. in_const_4 35 - 40
+1355. in_const_4 40 - 45
+1356. in_const_4 45 - 50
+1357. in_const_4 50 - 55
+1358. in_const_4 55 - 60
+1359. in_const_4 60 - 65
+1360. in_const_4 65 - 70
+1361. in_const_4 70 - 75
+1362. in_const_4 75 - 80
+1363. in_const_4 80 - 85
+1364. in_const_4 85 - 90
+1365. in_const_4 90 - 95
+1366. in_const_4 95 - 100
+1367. in_const_4 > 100
+
+1368. Sum in_const_5
+1369. Max in_const_5
+1370. Min in_const_5
+1371. Average in_const_5
+1372. Median High in_const_5
+1373. Median Low in_const_5
+1374. Normalised in_const_5
+1375. Standard Deviation in_const_5
+1376. Harmonic Mean in_const_5
+1377. Population Standard Deviation in_const_5
+1378. Population Variance in_const_5
+1379. Variance in_const_5
+1380. Geometric Mean in_const_5
+1381. in_const_5 1 - 5
+1382. in_const_5 5 - 10
+1383. in_const_5 10 - 15
+1384. in_const_5 15 - 20
+1385. in_const_5 20 - 25
+1386. in_const_5 25 - 30
+1387. in_const_5 30 - 35
+1388. in_const_5 35 - 40
+1389. in_const_5 40 - 45
+1390. in_const_5 45 - 50
+1391. in_const_5 50 - 55
+1392. in_const_5 55 - 60
+1393. in_const_5 60 - 65
+1394. in_const_5 65 - 70
+1395. in_const_5 70 - 75
+1396. in_const_5 75 - 80
+1397. in_const_5 80 - 85
+1398. in_const_5 85 - 90
+1399. in_const_5 90 - 95
+1400. in_const_5 95 - 100
+1401. in_const_5 > 100
+
+1402. Sum out_const_1
+1403. Max out_const_1
+1404. Min out_const_1
+1405. Average out_const_1
+1406. Median High out_const_1
+1407. Median Low out_const_1
+1408. Normalised out_const_1
+1409. Standard Deviation out_const_1
+1410. Harmonic Mean out_const_1
+1411. Population Standard Deviation out_const_1
+1412. Population Variance out_const_1
+1413. Variance out_const_1
+1414. Geometric Mean out_const_1
+1415. out_const_1 1 - 5
+1416. out_const_1 5 - 10
+1417. out_const_1 10 - 15
+1418. out_const_1 15 - 20
+1419. out_const_1 20 - 25
+1420. out_const_1 25 - 30
+1421. out_const_1 30 - 35
+1422. out_const_1 35 - 40
+1423. out_const_1 40 - 45
+1424. out_const_1 45 - 50
+1425. out_const_1 50 - 55
+1426. out_const_1 55 - 60
+1427. out_const_1 60 - 65
+1428. out_const_1 65 - 70
+1429. out_const_1 70 - 75
+1430. out_const_1 75 - 80
+1431. out_const_1 80 - 85
+1432. out_const_1 85 - 90
+1433. out_const_1 90 - 95
+1434. out_const_1 95 - 100
+1435. out_const_1 > 100
+
+1436. Sum out_const_2
+1437. Max out_const_2
+1438. Min out_const_2
+1439. Average out_const_2
+1440. Median High out_const_2
+1441. Median Low out_const_2
+1442. Normalised out_const_2
+1443. Standard Deviation out_const_2
+1444. Harmonic Mean out_const_2
+1445. Population Standard Deviation out_const_2
+1446. Population Variance out_const_2
+1447. Variance out_const_2
+1448. Geometric Mean out_const_2
+1449. out_const_2 1 - 5
+1450. out_const_2 5 - 10
+1451. out_const_2 10 - 15
+1452. out_const_2 15 - 20
+1453. out_const_2 20 - 25
+1454. out_const_2 25 - 30
+1455. out_const_2 30 - 35
+1456. out_const_2 35 - 40
+1457. out_const_2 40 - 45
+1458. out_const_2 45 - 50
+1459. out_const_2 50 - 55
+1460. out_const_2 55 - 60
+1461. out_const_2 60 - 65
+1462. out_const_2 65 - 70
+1463. out_const_2 70 - 75
+1464. out_const_2 75 - 80
+1465. out_const_2 80 - 85
+1466. out_const_2 85 - 90
+1467. out_const_2 90 - 95
+1468. out_const_2 95 - 100
+1469. out_const_2 > 100
+
+1470. Sum out_const_3
+1471. Max out_const_3
+1472. Min out_const_3
+1473. Average out_const_3
+1474. Median High out_const_3
+1475. Median Low out_const_3
+1476. Normalised out_const_3
+1477. Standard Deviation out_const_3
+1478. Harmonic Mean out_const_3
+1479. Population Standard Deviation out_const_3
+1480. Population Variance out_const_3
+1481. Variance out_const_3
+1482. Geometric Mean out_const_3
+1483. out_const_3 1 - 5
+1484. out_const_3 5 - 10
+1485. out_const_3 10 - 15
+1486. out_const_3 15 - 20
+1487. out_const_3 20 - 25
+1488. out_const_3 25 - 30
+1489. out_const_3 30 - 35
+1490. out_const_3 35 - 40
+1491. out_const_3 40 - 45
+1492. out_const_3 45 - 50
+1493. out_const_3 50 - 55
+1494. out_const_3 55 - 60
+1495. out_const_3 60 - 65
+1496. out_const_3 65 - 70
+1497. out_const_3 70 - 75
+1498. out_const_3 75 - 80
+1499. out_const_3 80 - 85
+1500. out_const_3 85 - 90
+1501. out_const_3 90 - 95
+1502. out_const_3 95 - 100
+1503. out_const_3 > 100
+
+1504. Sum out_const_4
+1505. Max out_const_4
+1506. Min out_const_4
+1507. Average out_const_4
+1508. Median High out_const_4
+1509. Median Low out_const_4
+1510. Normalised out_const_4
+1511. Standard Deviation out_const_4
+1512. Harmonic Mean out_const_4
+1513. Population Standard Deviation out_const_4
+1514. Population Variance out_const_4
+1515. Variance out_const_4
+1516. Geometric Mean out_const_4
+1517. out_const_4 1 - 5
+1518. out_const_4 5 - 10
+1519. out_const_4 10 - 15
+1520. out_const_4 15 - 20
+1521. out_const_4 20 - 25
+1522. out_const_4 25 - 30
+1523. out_const_4 30 - 35
+1524. out_const_4 35 - 40
+1525. out_const_4 40 - 45
+1526. out_const_4 45 - 50
+1527. out_const_4 50 - 55
+1528. out_const_4 55 - 60
+1529. out_const_4 60 - 65
+1530. out_const_4 65 - 70
+1531. out_const_4 70 - 75
+1532. out_const_4 75 - 80
+1533. out_const_4 80 - 85
+1534. out_const_4 85 - 90
+1535. out_const_4 90 - 95
+1536. out_const_4 95 - 100
+1537. out_const_4 > 100
+
+1538. Sum out_const_5
+1539. Max out_const_5
+1540. Min out_const_5
+1541. Average out_const_5
+1542. Median High out_const_5
+1543. Median Low out_const_5
+1544. Normalised out_const_5
+1545. Standard Deviation out_const_5
+1546. Harmonic Mean out_const_5
+1547. Population Standard Deviation out_const_5
+1548. Population Variance out_const_5
+1549. Variance out_const_5
+1550. Geometric Mean out_const_5
+1551. out_const_5 1 - 5
+1552. out_const_5 5 - 10
+1553. out_const_5 10 - 15
+1554. out_const_5 15 - 20
+1555. out_const_5 20 - 25
+1556. out_const_5 25 - 30
+1557. out_const_5 30 - 35
+1558. out_const_5 35 - 40
+1559. out_const_5 40 - 45
+1560. out_const_5 45 - 50
+1561. out_const_5 50 - 55
+1562. out_const_5 55 - 60
+1563. out_const_5 60 - 65
+1564. out_const_5 65 - 70
+1565. out_const_5 70 - 75
+1566. out_const_5 75 - 80
+1567. out_const_5 80 - 85
+1568. out_const_5 85 - 90
+1569. out_const_5 90 - 95
+1570. out_const_5 95 - 100
+1571. out_const_5 > 100
+
+
+Changing cc1, cc0, p0, p1 from greater than to range

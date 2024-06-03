@@ -1,0 +1,7 @@
+module XOR3X2(IN1, IN2, IN3, Q);
+input IN1, IN2, IN3;
+output Q;
+
+XOR x1(.A (IN1), .B (IN2), .C(IN3), .Y (Q));
+
+endmodule

@@ -1,0 +1,9 @@
+module NOR3BX4(AN, B, C, Y);
+input AN, B, C;
+output Y;
+wire A;
+
+NOT n1(.A (AN), .Y (A));
+NOR n2(.A (A), .B (B), .C (C), .Y (Y));
+
+endmodule

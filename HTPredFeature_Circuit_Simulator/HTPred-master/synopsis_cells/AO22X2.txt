@@ -1,0 +1,8 @@
+module AO22X2(IN1, IN2, IN3, IN4, Q);
+input IN1, IN2, IN3, IN4;
+output Q;
+wire w1, w2;
+AND a1(.A(IN1), .B(IN2), .Y(w1));
+AND a2(.A(IN3), .B(IN4), .Y(w2));
+OR o1(.A(w1), .B(w2), .Y(Q));
+endmodule

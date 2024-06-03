@@ -1,0 +1,7 @@
+module NOR3X0(IN1, IN2, IN3, QN);
+input IN1, IN2, IN3;
+output QN;
+
+NOR n1(.A (IN1), .B (IN2), .C(IN3), .Y (QN));
+
+endmodule

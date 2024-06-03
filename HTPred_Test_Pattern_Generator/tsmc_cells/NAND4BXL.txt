@@ -1,0 +1,9 @@
+module NAND4BXL(AN, B, C, D, Y);
+input AN, B, C, D;
+output Y;
+wire A;
+
+NOT n1(.A (AN), .Y (A));
+NAND n2(.A (A), .B (B), .C (C), .D (D), .Y (Y));
+
+endmodule

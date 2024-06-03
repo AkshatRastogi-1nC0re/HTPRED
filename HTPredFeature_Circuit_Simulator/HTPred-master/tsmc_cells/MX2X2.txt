@@ -1,0 +1,11 @@
+module MX2X2(A, B, S0, Y);
+input A, B, S0;
+output Y;
+wire T1, T2, T3;
+
+NOT n1(.A (S0), .Y (T1));
+AND a1(.A (A), .B (T1), .Y (T2));
+AND a2(.A (B), .B (S0), .Y (T3));
+OR o1(.A (T2), .B (T3), .Y (Y));
+
+endmodule

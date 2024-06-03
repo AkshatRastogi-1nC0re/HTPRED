@@ -1,0 +1,5 @@
+wire,fan_in_1,fan_in_2,fan_in_3,fan_in_4,fan_in_5,loop_in_1,loop_in_2,loop_in_3,loop_in_4,loop_in_5,loop_out_1,loop_out_2,loop_out_3,loop_out_4,loop_out_5,in_nearest_pin,out_nearest_pout,in_ff_1,in_ff_2,in_ff_3,in_ff_4,in_ff_5,out_ff_1,out_ff_2,out_ff_3,out_ff_4,out_ff_5,in_nearest_ff,out_nearest_ff,in_const_1,in_const_2,in_const_3,in_const_4,in_const_5,out_const_1,out_const_2,out_const_3,out_const_4,out_const_5
+10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,None,None,0,0,0,0,0,0,0,0,0,0
+11,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,None,None,0,0,0,0,0,0,0,0,0,0
+16,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,None,None,0,0,0,0,0,0,0,0,0,0
+19,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,None,None,0,0,0,0,0,0,0,0,0,0

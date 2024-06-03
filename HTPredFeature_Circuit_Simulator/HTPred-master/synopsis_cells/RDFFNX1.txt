@@ -1,0 +1,12 @@
+module RDFFNX1(CLK, D, RETN, Q, QN);
+input CLK, D, RETN;
+output Q, QN;
+
+
+
+DFF d1(.CLK (CLK), .D (D), .RETN (RETN), .Q (Q));
+NOT n2(.A (Q), .Y (QN));
+
+ 
+
+endmodule

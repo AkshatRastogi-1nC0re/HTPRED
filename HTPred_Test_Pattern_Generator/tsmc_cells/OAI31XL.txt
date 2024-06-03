@@ -1,0 +1,9 @@
+module OAI31XL(A0, A1, A2, B0, Y);
+input A0, A1, A2, B0;
+output Y;
+wire E;
+
+OR o1(.A (A0), .B (A1), .C (A2), .Y (E));
+NAND n4(.A (E), .B (B0), .Y (Y));
+
+endmodule

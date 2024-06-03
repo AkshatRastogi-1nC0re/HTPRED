@@ -1,0 +1,7 @@
+module ISOLORX8(D, ISO, Q);
+input D, ISO;
+output Q;
+
+OR n1(.A (D), .B (ISO) , .Y (Q));
+
+endmodule

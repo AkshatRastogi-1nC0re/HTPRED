@@ -1,0 +1,7 @@
+module AND2X2(IN1, IN2, Q);
+input IN1, IN2;
+output Q;
+
+AND n1(.A (IN1), .B (IN2) , .Y (Q));
+
+endmodule

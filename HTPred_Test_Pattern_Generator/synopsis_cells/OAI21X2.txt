@@ -1,0 +1,7 @@
+module OAI21X2(IN1, IN2, IN3, QN);
+input IN1, IN2, IN3;
+output QN;
+wire w1;
+OR o1(.A(IN1), .B(IN2), .Y(w1));
+NAND a1(.A(w1), .B(IN3), .Y(QN));
+endmodule

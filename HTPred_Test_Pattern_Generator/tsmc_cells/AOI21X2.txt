@@ -1,0 +1,11 @@
+module AOI21X2(A0, A1, B0, Y);
+input A0, A1, B0;
+output Y;
+wire D;
+
+AND a1(.A (A0), .B (A1), .Y (D));
+NOR a2(.A (D), .B (B0), .Y (Y));
+
+endmodule
+
+

@@ -1,0 +1,27 @@
+module AFCSHCONX2(A, B, CI0, CI1, CS, S, CO0N, CO1N);
+input A, B, CI0, CI1, CS;
+output S, CO0N, CO1N;
+wire T1, T2, T3, T4, T5, T6, T8, T9, T10, T11;
+
+XOR x2(.A (A), .B (B), .C (CI1), .Y (T1));
+
+NOT n(.A (CS), .Y (T2));
+XOR x1(.A (A), .B (B), .C (CI0), .Y (T3));
+
+AND a1(.A (T1), .B (CS), .Y (T4));
+AND a2(.A (T2), .B (T3), .Y (T5));
+
+OR  o1(.A (T4), .B(T5), .Y (S));
+
+AND a3(.A (A), .B (B), .Y (T6));
+
+AND a4(.A (A), .B (CI0), .Y (T8));
+AND a5(.A (A), .B (CI1), .Y (T9));
+
+AND a6(.A (B), .B (CI0), .Y (T10));
+AND a6(.A (B), .B (CI1), .Y (T11));
+
+NOR  o2(.A (T6), .B (T8), .C (T10), .Y (CO0N));
+NOR  o3(.A (T6), .B (T9), .C (T11), .Y (CO1N));
+
+endmodule

@@ -1,0 +1,9 @@
+module HOLDX1(Y);
+input Y;
+output Y;
+wire E;
+
+NOT n1(.A (Y), .Y (E));
+NOT n2(.A (E), .Y (Y));
+
+endmodule

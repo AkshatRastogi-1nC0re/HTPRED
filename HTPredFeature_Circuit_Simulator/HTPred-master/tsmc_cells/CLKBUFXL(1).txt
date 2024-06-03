@@ -1,0 +1,8 @@
+module CLKBUFXL(A, Y);
+input A;
+output Y;
+
+
+BUFF b(.A (A), .Y(Y));
+
+endmodule

@@ -1,0 +1,8 @@
+module HADDX1(A0, B0, S0, C1);
+input A0, B0;
+output S0, C1;
+
+XOR x1(.A (A0), .B (B0), .Y (S0));
+AND a1(.A (A0), .B (B0), .Y (C1));
+
+endmodule

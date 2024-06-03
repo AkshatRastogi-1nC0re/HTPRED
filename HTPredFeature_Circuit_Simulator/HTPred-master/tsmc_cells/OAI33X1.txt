@@ -1,0 +1,10 @@
+module OAI33X1(A0, A1, A2, B0, B1, B2, Y);
+input A0, A1, A2, B0, B1, B2;
+output Y;
+wire E, F;
+
+OR o1(.A (A0), .B (A1), .C (A2), .Y (E));
+OR o2(.A (B0), .B (B1), .C (B2), .Y (F));
+NAND n1(.A (E), .B (F), .Y (Y));
+
+endmodule
